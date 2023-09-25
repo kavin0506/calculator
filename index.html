@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>function</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	
+</head>
+<body>
+	<!-- <form> -->
+		<input type="text" id="firstvalue" name="value">
+		<input type="text" id="secondvalue" name="value"><br>
+		<button id="add">Add</button>
+		<button id="subtract">Subtract</button>
+		<button id="multi">Multi</button>
+		<button id="division">Div</button><br>
+		<!-- <!-- <button id="submit">Submit</button> -->	
+	<!-- </form> -->
+	
+	<!-- <button id="addbtn" onclick="operator(`+`)">add</button> -->
+	<!-- <button id="addbtn" onclick="operator(`-`)"> sub</button> -->
+	<!-- <button id="addbtn" onclick="operator(`*`)">multi</button> -->
+	<!-- <button id="addbtn" onclick="operator(`/`)">div</button> -->
+	
+	
+	
+	
+	
+	
+<script>
+ 
+let fstvalue=document.getElementById("firstvalue");
+let secvalue=document.getElementById("secondvalue");
+let _add=document.getElementById("add");
+let _subtract=document.getElementById("subtract");
+let _multi=document.getElementById("multi");
+let _div=document.getElementById("division");
+let _submit=document.getElementById("addbtn");
+
+
+function add(a,b){
+	console.log(a+b);
+}
+_add .addEventListener("click",function(){
+	let num1=parseInt(fstvalue.value);
+	let num2=parseInt(secvalue.value);
+	add(num1,num2);
+})
+
+function subtract(a,b){
+
+	console.log(a-b);
+}
+_subtract.addEventListener("click",function(){
+	let num1=parseInt(fstvalue.value);
+	let num2=parseInt(secvalue.value);
+	subtract(num1,num2);
+})
+
+function multi(a,b){
+	console.log(a*b);
+}
+_multi.addEventListener("click",function(){
+	let num1=parseInt(fstvalue.value);
+	let num2=parseInt(secondvalue.value);
+	multi(num1,num2);
+})
+function div(a,b){
+	console.log(a/b);
+}
+_div.addEventListener("click",function(){
+	let num1=parseInt(fstvalue.value);
+	let num2=parseInt(secvalue.value);
+	div(num1,num2);
+})
+</script>
+</body>
+</html>
